@@ -1,10 +1,11 @@
 # Запускаем Docker Compose
 
+Пишем **Docker Compose** для простейшей связки мониторинга: **Grafana + Prometheus + Node Exporter**
+
 ## Tasks 2
 
 ### Шаг 1
-- Пишем **Docker Compose** для простейшей связки мониторинга:
-  - **Grafana + Prometheus + Node Exporter**
+- Пишем **Docker Compose**
 
 ### Шаг 2
 - Объявляем `volumes`
@@ -60,12 +61,11 @@ volumes:
 - Удаляем в начале файла `Compose` версию `Docker Compose`, потому что она каждый раз обновляется, из-за этого скрипт `Compose` может не отработать
 
 ### Шаг 7
-- Проверяем связку из **Шага 1**
-  - Проверяем, что все веб-морды отрабатывают
-  - Загружаем дашборд [Node Exporter Full](https://grafana.com/grafana/dashboards/1860-node-exporter-full/) в **Grafana** и проверяем работу
+- Проверяем, что все веб-морды отрабатывают
+- Загружаем дашборд [Node Exporter Full](https://grafana.com/grafana/dashboards/1860-node-exporter-full/) в **Grafana** и проверяем работу
 
 ### Шаг 8
-- Если всё успешно запустилось, то нужно удалить Compose проект `docker compose down` и проверить, что всё удалилось:
+- Если всё успешно запустилось, то нужно удалить **Docker Compose** проект `docker compose down` и проверить, что всё удалилось:
 
   - ```bash
     docker ps      # список запущенных контейнеров (запущенные в данный момент)
