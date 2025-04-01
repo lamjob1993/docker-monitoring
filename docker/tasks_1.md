@@ -1,8 +1,12 @@
 # Запускаем Docker 
 - Запускаем образ на коленке
-- 
+
 ## Шаг 1
 - Запускаем Prometheus
+- Возьмем [в пример запуска](https://github.com/prometheus/prometheus)
+  - ```
+    docker run --name prometheus -d -p 127.0.0.1:9090:9090 prom/prometheus
+    ``` 
 
 ## Шаг 2
 - Запускаем Grafana
@@ -11,4 +15,5 @@
 - Запускаем NodeExporter
 
 ## Шаг 4
+- Проверяем веб-морды на всех ПО
 - Снимаем метрики с дашборда Node Exporter Full
