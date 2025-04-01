@@ -1,4 +1,4 @@
-# Запускаем Docker Compose
+# Пишем Docker Compose и запускаем
 
 Пишем **Docker Compose** для простейшей связки мониторинга: **Grafana + Prometheus + Node Exporter**
 
