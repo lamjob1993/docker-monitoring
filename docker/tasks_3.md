@@ -1,4 +1,4 @@
-# Пишем Dockerfile 
+# Пишем Dockerfile и запускаем
 
 Пишем наш первый **Dockerfile** на примере базового мониторинга: **Grafana + Prometheus + Node Exporter**
 
