@@ -50,5 +50,43 @@
 ---
 
 ## Шпаргалка
-Сначала думаем над каждым заданием в разделе Tasks, если не можем понять какой-то инструмент не менее 40-ка минут и только потом смотрим этот раздел по пунктам!
+_Сначала думаем над каждым заданием в разделе Tasks, если не можем понять какой-то инструмент не менее 40-ка минут и только потом смотрим этот раздел по пунктам!_
 ### Готовый Docker Compose в качестве примера
+
+```yaml
+version: '3.3'
+
+services:
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+    restart: unless-stopped
+
+  node_exporter:
+    image: quay.io/prometheus/node-exporter:latest
+    container_name: node_exporter
+    ports:
+      - "9100:9100"
+    restart: unless-stopped
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana-storage:/var/lib/grafana
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    restart: unless-stopped
+
+volumes:
+  grafana-storage:
+```
+
