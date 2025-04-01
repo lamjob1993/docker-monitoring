@@ -4,7 +4,7 @@
 
 ## Tasks 3
 
-Пишем `dockerfile.yml`
+Пишем **dockerfile**
 
 ### Шаг 1
 - Создаем **Dockerfile**
