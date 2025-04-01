@@ -13,10 +13,13 @@
 
 ## Шаг 4
 - Пробрасываем конфиги
-  - Кладем конфиги под ноги директории с `Docker Compose` файлом
-  - ```bash
+  - Кладем конфиг в корень директории с `Docker Compose` файлом
+
+  - ```
+
     volumes:
-      - ./prometheus.yml:/etc/prometheus/prometheus.yml   # здесь из-под ног корневой директории пробрасывается ваш файл ./prometheus.yml через двоеточие : в директорию контейнера :/etc/prometheus/prometheus.yml
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml   # проброс конфига ./prometheus.yml из корня ./ через двоеточие : в директорию контейнера :/etc/prometheus/prometheus.yml
+  
     ```
 
 ## Шаг 5
