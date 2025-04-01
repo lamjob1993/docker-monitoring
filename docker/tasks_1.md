@@ -5,7 +5,7 @@
 - Запускаем **Prometheus**
 - Возьмем [за пример запуска](https://github.com/prometheus/prometheus) официальный репозиторий
     - ```bash
-      docker run --name prometheus -d -p 127.0.0.1:9090:9090 prom/prometheus
+      docker run --name prometheus -d -p 127.0.0.1:9090:9090 prom/prometheus   # скачивание образа (если не скачан автоматом) и запуск образа Prometheus с объявлением имени --name prometheus в `-d` интерактивном режиме с пробросом портов :9090:9090 (внутренний/внешний) 
       ``` 
 
 ## Шаг 2
