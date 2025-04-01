@@ -57,39 +57,48 @@ _Сначала думаем над каждым заданием в разде�
 #### Готовый Docker Compose в качестве примера
 
 ```yaml
-version: '3.3'   #  эту строку удаляем для избежания конфликтов
+version: '3.3'  # Указываем версию формата Docker Compose (удаляем строку, так как может возникнуть конфликт версий на разных Docker Compose).
 
 services:
   prometheus:
-    image: prom/prometheus:latest
-    container_name: prometheus
+    image: prom/prometheus:latest  # Используем официальный образ Prometheus с тегом latest.
+    container_name: prometheus  # Задаем имя контейнера для удобства идентификации.
     ports:
-      - "9090:9090"
+      - "9090:9090"  # Пробрасываем порт 9090 на хост, чтобы веб-интерфейс Prometheus был доступен.
     volumes:
-      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml  # Монтируем локальный файл конфигурации Prometheus в контейнер.
     command:
-      - '--config.file=/etc/prometheus/prometheus.yml'
-    restart: unless-stopped
+      - '--config.file=/etc/prometheus/prometheus.yml'  # Указываем путь к конфигурационному файлу внутри контейнера.
+    networks:
+      - network_monitoring  # Подключаем контейнер к пользовательской сети network_monitoring.
+    restart: unless-stopped  # Контейнер будет автоматически перезапускаться, если он остановлен не вручную.
 
   node_exporter:
-    image: quay.io/prometheus/node-exporter:latest
-    container_name: node_exporter
+    image: quay.io/prometheus/node-exporter:latest  # Используем официальный образ Node Exporter с тегом latest.
+    container_name: node_exporter  # Задаем имя контейнера.
     ports:
-      - "9100:9100"
-    restart: unless-stopped
+      - "9100:9100"  # Пробрасываем порт 9100 на хост, чтобы метрики были доступны.
+    networks:
+      - network_monitoring  # Подключаем контейнер к пользовательской сети network_monitoring.
+    restart: unless-stopped  # Контейнер будет автоматически перезапускаться, если он остановлен не вручную.
 
   grafana:
-    image: grafana/grafana:latest
-    container_name: grafana
+    image: grafana/grafana:latest  # Используем официальный образ Grafana с тегом latest.
+    container_name: grafana  # Задаем имя контейнера.
     ports:
-      - "3000:3000"
+      - "3000:3000"  # Пробрасываем порт 3000 на хост, чтобы веб-интерфейс Grafana был доступен.
     volumes:
-      - grafana-storage:/var/lib/grafana
+      - grafana-storage:/var/lib/grafana  # Создаем том для хранения данных Grafana (например, дашбордов).
     environment:
-      - GF_SECURITY_ADMIN_PASSWORD=admin
-    restart: unless-stopped
+      - GF_SECURITY_ADMIN_PASSWORD=admin  # Устанавливаем пароль администратора Grafana по умолчанию.
+    networks:
+      - network_monitoring  # Подключаем контейнер к пользовательской сети network_monitoring.
+    restart: unless-stopped  # Контейнер будет автоматически перезапускаться, если он остановлен не вручную.
 
 volumes:
-  grafana-storage:
+  grafana-storage:  # Определяем том для хранения данных Grafana.
+
+networks:
+  network_monitoring:  # Создаем пользовательскую сеть для изоляции и связи контейнеров.
 ```
 
