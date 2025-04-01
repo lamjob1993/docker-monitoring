@@ -21,7 +21,7 @@
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
     ```
-  - проброс конфига `./prometheus.yml` из корня `./` через двоеточие `:` в директорию контейнера `:/etc/prometheus/prometheus.yml`
+  - проброс конфига `./prometheus.yml` из корня `./` директории **Docker Compose** через двоеточие `:` в директорию контейнера `:/etc/prometheus/prometheus.yml`
 
 ### Шаг 5
 - Скачиваем только последние версии ПО: `latest`
