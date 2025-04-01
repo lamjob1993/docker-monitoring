@@ -9,9 +9,15 @@
 
 ## Шаг 3
 - Назначаем общую сетку
+  - `network_monitoring`
 
 ## Шаг 4
 - Пробрасываем конфиги
+  - Кладем конфиги под ноги директории с `Docker Compose` файлом
+  - ```bash
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml   # здесь из-под ног корневой директории пробрасывается ваш файл ./prometheus.yml через двоеточие : в директорию контейнера :/etc/prometheus/prometheus.yml
+    ```
 
 ## Шаг 5
 - Скачиваем только последние версии ПО: `latest`
@@ -21,7 +27,8 @@
 
 ## Шаг 7
 - Проверяем связку из **Шага 1**
-  - Проверяем, что все веб-морды отрабатывают и дашборд [Node Exporter Full](https://grafana.com/grafana/dashboards/1860-node-exporter-full/) работает
+  - Проверяем, что все веб-морды отрабатывают
+  - Загружаем дашборд [Node Exporter Full](https://grafana.com/grafana/dashboards/1860-node-exporter-full/) в **Grafana** и проверяем работу
 
 ## Шаг 8
 - Если всё успешно запустилось, то нужно удалить Compose проект `docker compose down` и проверить, что всё удалилось:
