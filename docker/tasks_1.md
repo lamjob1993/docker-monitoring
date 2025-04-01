@@ -18,4 +18,4 @@
 
 ## Шаг 4
 - Проверяем веб-морды на всех ПО
-- Снимаем метрики с дашборда Node Exporter Full
+- Снимаем метрики с дашборда [Node Exporter Full](https://grafana.com/grafana/dashboards/1860-node-exporter-full/)
