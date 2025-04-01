@@ -4,9 +4,10 @@
 
 ## Tasks 3
 
-Пишем **dockerfile**:
+Пишем **Dockerfile**:
 - Это стандартное имя и его автомтом подхватывает **Docker** при билде, для своего имени используйте ключ - `-f`:
   - `docker build -t prometheus -f prometheus-dockerfile .`
+    - Здесь `.` указывает текущую директорию, где находится файл Dockerfile 
 
 ### Шаг 1
 - Создаем **Dockerfile**
