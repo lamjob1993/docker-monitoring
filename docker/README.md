@@ -74,8 +74,7 @@ Docker и его инструменты, такие как **Docker Compose** и
 
 1. Пример Docker схемы на основе Mermaid sequenceDiagram:
 
-
-```
+```mermaid
 sequenceDiagram
     participant User as Пользователь
     participant CLI as Docker CLI
@@ -99,11 +98,11 @@ sequenceDiagram
     Container-->>User: Запуск и работа контейнера
 ```
 
-
-Этот пример демонстрирует последовательность действий при запуске Docker контейнера .
+Этот пример демонстрирует последовательность действий при запуске Docker контейнера [[2]].
 
 2. Глобальная работа Docker, основные компоненты и их взаимодействие:
 
+```mermaid
 graph TD
     U[Пользователь] -->|Использует| CLI[Docker CLI]
     CLI -->|Отправляет команды через API| Engine[Docker Engine]
@@ -122,11 +121,11 @@ graph TD
     
     Engine -->|Взаимодействует с| OS[Операционная система]
     OS -->|Использует| Kernel[Linux Kernel]
-
+```
 
 3. Docker Engine в деталях:
 
-
+```mermaid
 graph TB
     subgraph DockerEngine [Docker Engine]
         A[Docker Daemon] --> B[Container Runtime]
@@ -140,12 +139,12 @@ graph TB
     end
     
     CLI[Docker CLI] -->|API| DockerEngine
-
+```
 
 Как работает Docker глобально:
 
 1. Пользователь взаимодействует с Docker через CLI (Command Line Interface) или другие клиентские инструменты.
-2. Docker CLI отправляет команды в Docker Engine через REST API .
+2. Docker CLI отправляет команды в Docker Engine через REST API [[4]].
 3. Docker Engine (основной компонент):
 - Docker Daemon обрабатывает запросы
 - Управляет образами, контейнерами, сетями и томами
@@ -170,4 +169,4 @@ graph TB
 1. Пользователь отправляет команду через CLI
 2. CLI передает запрос в Docker Engine через API
 3. Docker Engine обрабатывает запрос, используя необходимые компоненты
-4. Результат возвращается пользователю .
+4. Результат возвращается пользователю [[4]].
