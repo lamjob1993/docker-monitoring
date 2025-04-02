@@ -44,6 +44,7 @@
 ### Шаг 11 
 - Собираем образ со своим именем: `docker build -t my-image-name .`
   - `my-image-name` - может быть любым
+    - В нашем случае будет: Grafana, Prometheus, Node Exporter
 
 ### Шаг 12
 - Далее собираем таким же образом всю связку **Grafana + Prometheus + Node Exporter** по отдельности
@@ -52,7 +53,7 @@
 - Проверяем список образов `docker images`
 
 ### Шаг 13
-- Запускаем контейнер `docker run my-image-name`
+- Запускаем по очереди контейнеры `docker run my-image-name`
 
 ### Шаг 14
 - Проверяем связку **Grafana + Prometheus + Node Exporter** на веб-мордах
