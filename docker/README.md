@@ -69,3 +69,104 @@ Dockerfile — это текстовый файл, содержащий инст
 ---
 
 Docker и его инструменты, такие как **Docker Compose** и **Dockerfile**, играют основную роль в современной разработке, особенно в таких областях, как финтех и банковский сектор. Они обеспечивают изоляцию, масштабируемость, безопасность и удобство развертывания приложений. Сетевая и архитектурная части **Docker** позволяют эффективно организовывать взаимодействие между контейнерами, а низкоуровневые компоненты, такие как **RunC**, обеспечивают надежность и производительность.
+
+---
+
+1. Пример Docker схемы на основе Mermaid sequenceDiagram:
+
+```
+sequenceDiagram
+    participant User as Пользователь
+    participant CLI as Docker CLI
+    participant DockerEngine as Docker Engine
+    participant Container as Контейнер
+    participant Image as Образ
+    participant Volume as Том
+    participant Network as Сеть
+
+    User->>CLI: docker run <image>
+    CLI->>DockerEngine: API request
+    DockerEngine->>Image: Проверка наличия образа
+    Image-->>DockerEngine: Образ найден/не найден
+    alt если образ не найден
+        DockerEngine->>DockerHub: Pull image
+        DockerHub-->>DockerEngine: Download image
+    end
+    DockerEngine->>Container: Создание контейнера
+    DockerEngine->>Volume: Монтирование томов
+    DockerEngine->>Network: Подключение к сети
+    Container-->>User: Запуск и работа контейнера
+```
+
+Этот пример демонстрирует последовательность действий при запуске Docker контейнера .
+
+2. Глобальная работа Docker, основные компоненты и их взаимодействие:
+
+```
+graph TD
+    U[Пользователь] -->|Использует| CLI[Docker CLI]
+    CLI -->|Отправляет команды через API| Engine[Docker Engine]
+    
+    Engine -->|Управляет| Containers[Контейнеры]
+    Engine -->|Хранит и обрабатывает| Images[Образы]
+    Engine -->|Организует| Volumes[Тома]
+    Engine -->|Настройка| Networks[Docker Networks]
+    
+    subgraph Backend [Docker Backend]
+        Containers
+        Images
+        Volumes
+        Networks
+    end
+    
+    Engine -->|Взаимодействует с| OS[Операционная система]
+    OS -->|Использует| Kernel[Linux Kernel]
+```
+
+3. Docker Engine в деталях:
+
+```
+graph TB
+    subgraph DockerEngine [Docker Engine]
+        A[Docker Daemon] --> B[Container Runtime]
+        A --> C[Storage Driver]
+        A --> D[Networking]
+        
+        B -->|Запускает и управляет| Containers[Контейнеры]
+        C -->|Управляет| Images[Образы]
+        C -->|и| Layers[Слои]
+        D -->|Настраивает| Networks[Сети]
+    end
+    
+    CLI[Docker CLI] -->|API| DockerEngine
+```
+
+Как работает Docker глобально:
+
+1. Пользователь взаимодействует с Docker через CLI (Command Line Interface) или другие клиентские инструменты.
+2. Docker CLI отправляет команды в Docker Engine через REST API .
+3. Docker Engine (основной компонент):
+- Docker Daemon обрабатывает запросы
+- Управляет образами, контейнерами, сетями и томами
+- Использует container runtime (например, runc) для запуска контейнеров
+- Взаимодействует с ядром Linux через storage drivers и networking components
+
+Основные компоненты:
+1. Docker CLI - интерфейс командной строки
+2. Docker Engine - сердце системы, включает:
+- Docker Daemon
+- Container Runtime
+- Storage Drivers
+- Networking
+
+3. Backend компоненты:
+- Images (образы)
+- Containers (контейнеры)
+- Volumes (тома)
+- Networks (сети)
+
+Взаимодействие происходит следующим образом:
+1. Пользователь отправляет команду через CLI
+2. CLI передает запрос в Docker Engine через API
+3. Docker Engine обрабатывает запрос, используя необходимые компоненты
+4. Результат возвращается пользователю .
