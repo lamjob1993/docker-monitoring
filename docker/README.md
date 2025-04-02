@@ -74,7 +74,7 @@ Docker и его инструменты, такие как **Docker Compose** и
 
 1. Пример Docker схемы на основе Mermaid sequenceDiagram:
 
-```
+
 sequenceDiagram
     participant User as Пользователь
     participant CLI as Docker CLI
@@ -96,13 +96,12 @@ sequenceDiagram
     DockerEngine->>Volume: Монтирование томов
     DockerEngine->>Network: Подключение к сети
     Container-->>User: Запуск и работа контейнера
-```
+
 
 Этот пример демонстрирует последовательность действий при запуске Docker контейнера .
 
 2. Глобальная работа Docker, основные компоненты и их взаимодействие:
 
-```
 graph TD
     U[Пользователь] -->|Использует| CLI[Docker CLI]
     CLI -->|Отправляет команды через API| Engine[Docker Engine]
@@ -121,11 +120,11 @@ graph TD
     
     Engine -->|Взаимодействует с| OS[Операционная система]
     OS -->|Использует| Kernel[Linux Kernel]
-```
+
 
 3. Docker Engine в деталях:
 
-```
+
 graph TB
     subgraph DockerEngine [Docker Engine]
         A[Docker Daemon] --> B[Container Runtime]
@@ -139,7 +138,7 @@ graph TB
     end
     
     CLI[Docker CLI] -->|API| DockerEngine
-```
+
 
 Как работает Docker глобально:
 
