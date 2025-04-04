@@ -4,8 +4,7 @@
 
 ## Tasks 3
 
-### Шаг 1
-- Пишем **Docker Compose**
+### Шаг 1. Пишем **Docker Compose**
 
 #### Рассмотрим готовый Docker Compose в качестве примера
 
