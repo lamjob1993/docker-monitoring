@@ -71,4 +71,7 @@ EXPOSE 9090
 - Далее собираем таким же образом всю связку **Grafana + Prometheus + Node Exporter** по отдельности
 - Проверяем список образов `docker images`
 - Запускаем по очереди контейнеры `docker run my-image-name`
+
+### Шаг 3. Финал
+
 - Проверяем связку **Grafana + Prometheus + Node Exporter** на веб-мордах
