@@ -64,7 +64,7 @@ CMD ["/bin/prometheus", "--config.file=/etc/prometheus/prometheus.yml"]
 EXPOSE 9090
 ```
 
-### Шаг 2. 
+### Шаг 2. Сборка образа и запуск
 
 - Собираем образ со своим именем: `docker build -t monitoring-test .`
   - `my-image-name` - может быть любым
