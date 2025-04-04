@@ -9,53 +9,53 @@
   - `docker build -t prometheus -f prometheus-dockerfile .`
     - Здесь `.` указывает текущую директорию, где находится файл **Dockerfile** 
 
-### Шаг 1
+
 - Пишем самостоятельно **Dockerfile**
 - Берем в основу легковесный **Alpine Linux**
 
-### Шаг 2
+
 - Обновляем пакеты в **Alpine Linux** и устанавливаем необходимые зависимости:
   - `RUN apk update && apk add --no-cache wget tar`
 
-### Шаг 3
+
 - Создаем директорию `/etc/prometheus`
 
-### Шаг 4
+
 - Создаем директорию `/prometheus` для данных Prometheus
 
-### Шаг 5
+
 - Скачиваем арив с бинарным файлом **Prometheus** с официального сайта
 
-### Шаг 6
+
 - Распаковываем и копируем бинарный файл **prometheus** в `/bin` для удобства использования
 
-### Шаг 7
+
 - Копируем пример конфигурационного файла `prometheus.yml` в `/etc/prometheus`
 
-### Шаг 8
+
 - Указываем рабочую директорию внутри контейнера `WORKDIR /prometheus`
 
-### Шаг 9
+
 - Определяем команду, которая будет запускаться при старте контейнера `CMD ["/bin/prometheus", "--config.file=/etc/prometheus/prometheus.yml"]`
 
-### Шаг 10
+
 - Открываем порт `9090` для веб-интерфейса **Prometheus**
 
-### Шаг 11 
+
 - Собираем образ со своим именем: `docker build -t my-image-name .`
   - `my-image-name` - может быть любым
     - В нашем случае будет: Grafana, Prometheus, Node Exporter
 
-### Шаг 12
+
 - Далее собираем таким же образом всю связку **Grafana + Prometheus + Node Exporter** по отдельности
 
-### Шаг 12
+
 - Проверяем список образов `docker images`
 
-### Шаг 13
+
 - Запускаем по очереди контейнеры `docker run my-image-name`
 
-### Шаг 14
+
 - Проверяем связку **Grafana + Prometheus + Node Exporter** на веб-мордах
 
 --- 
