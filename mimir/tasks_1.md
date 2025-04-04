@@ -12,7 +12,7 @@ _Пользуемся официальной документацией на Git
      - `Nginx`
      - `MinIO`
 - Постепенно погружаемся в [схему балансировки](https://grafana.com/docs/mimir/next/get-started/play-with-grafana-mimir/) для горизонтального масштабирования `Prometheus` в разрезе трех инстансов `Mimir` (так называемый хэшринг из кольца `Mimir`, или кольцо хэшринга) завязанных на `Nginx`
- - [Смотрим этот ролик](https://grafana.com/docs/mimir/latest/get-started/)
+ - [Посмотрите этот ролик](https://grafana.com/docs/mimir/latest/get-started/)
  - [Вручную по инструкции напишите Docker Compose](https://grafana.com/docs/mimir/next/get-started/play-with-grafana-mimir/)
    - Если не справляетесь, то по той же ссылке подсмотрите в готовые конфиги и в Compose
  - Настройте рабочий конфиг `Mimir` 
