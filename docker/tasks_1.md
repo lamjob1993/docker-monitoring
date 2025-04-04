@@ -5,7 +5,7 @@
 
 ### Шаг 1
 - Запускаем **Prometheus**
-- Возьмем [за пример запуска](https://github.com/prometheus/prometheus) официальный репозиторий:
+- Возьмем [за пример запуска](https://github.com/prometheus/prometheus) официальный репозиторий **Prometheus**:
     - ```bash
       docker run --name prometheus -d -p 127.0.0.1:9090:9090 prom/prometheus
       ```
