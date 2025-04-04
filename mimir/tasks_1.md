@@ -4,7 +4,7 @@ _Пользуемся официальной документацией на Git
 
 ## Tasks 1
 
- - [Вспоминаем нашу схему взаимодействия мониторинга с Mimir](https://github.com/lamjob1993/linux-monitoring/blob/main/mimir/README.md#%D1%81%D1%85%D0%B5%D0%BC%D0%B0-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B-mimir)
+ - [Вспоминаем нашу схему взаимодействия мониторинга с Mimir](https://github.com/lamjob1993/docker-monitoring/blob/main/mimir/README.md#%D1%81%D1%85%D0%B5%D0%BC%D0%B0-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B-mimir)
    - По данному `Tasks` разделу нужно выполнить только деплой:
      - `Grafana` на отдельной виртуалке
        - Если `Grafana` уже поднята, то отлично, поднимать еще раз не нужно
