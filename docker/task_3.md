@@ -2,7 +2,7 @@
 
 Пишем **Docker Compose** для простейшей связки мониторинга: **Grafana + Prometheus + Node Exporter**
 
-## Tasks 3
+## Task 3
 
 ### Шаг 1. Пишем **Docker Compose**
 
