@@ -7,4 +7,4 @@
 
 ### Последовательность выполнения заданий
   1. Открываем директорию **`docker`** → `README.md` → `tasks_1.md` → `tasks_2.md` → `tasks_3.md` → `tasks_4.md`
-  2. Открываем директорию **`mimir`** → `README.md` → `tasks_1.md`
+  2. Открываем директорию **`mimir`** → `README.md` → `tasks_1.md` → `tech_questions.md`
