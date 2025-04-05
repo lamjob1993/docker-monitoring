@@ -7,6 +7,6 @@
 
 ### Последовательность выполнения заданий
   1. Открываем директорию **`docker`** → `README.md` → `task_1.md` → `task_2.md` → `task_3.md` → `task_4.md`
-      - `Dockerfile` + `Docker Compose: Monitoring Stack`
+      - **`Что будет:`** `Dockerfile` + `Docker Compose: Monitoring Stack`
   3. Открываем директорию **`mimir`** → `README.md` → `task_1.md` → `tech_questions.md`
-      - `Grafana` + `Prometheus` + `x3 Mimir` + `Nginx` + `MinIO`
+      - **`Что будет:`** `Grafana` + `Prometheus` + `x3 Mimir` + `Nginx` + `MinIO`
