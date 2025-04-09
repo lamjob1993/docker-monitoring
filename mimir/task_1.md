@@ -14,8 +14,12 @@ _Пользуемся официальной документацией на Git
 - Постепенно погружаемся в [схему балансировки](https://grafana.com/docs/mimir/next/get-started/play-with-grafana-mimir/) для горизонтального масштабирования `Prometheus` в разрезе трех инстансов `Mimir` (так называемый хэшринг из кольца `Mimir`, или кольцо хэшринга) завязанных на `Nginx`
  - [Посмотрите этот ролик](https://grafana.com/docs/mimir/latest/get-started/)
  - [Вручную без инструкции напишите Docker Compose](https://grafana.com/docs/mimir/next/get-started/play-with-grafana-mimir/)
-   - Если не справляетесь, то по той же ссылке подсмотрите в готовые конфиги и в Compose
- - Настройте рабочий конфиг `Mimir` 
+   - Если не справляетесь, то по этой же ссылке есть готовые конфиги в GitHub:
+    - ```bash
+      git clone https://github.com/grafana/mimir.git
+      cd mimir 
+      ``` 
+- Настройте рабочий конфиг `Mimir` 
  - Настройте `Prometheus` на `remote-write` в `Mimir`
  - Пропишите `Data Source Mimir` в `Grafana`
  - Снимите метрики в разделе **Explore** из `Data Source Mimir` в `Grafana`
