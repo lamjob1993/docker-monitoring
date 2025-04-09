@@ -15,10 +15,10 @@ _Пользуемся официальной документацией на Git
  - [Посмотрите этот ролик](https://grafana.com/docs/mimir/latest/get-started/)
  - [Вручную без инструкции напишите Docker Compose](https://grafana.com/docs/mimir/next/get-started/play-with-grafana-mimir/)
    - Если не справляетесь, то по этой же ссылке есть готовые конфиги в GitHub:
-    - ```bash
-      git clone https://github.com/grafana/mimir.git
-      cd mimir 
-      ``` 
+     - ```bash
+       git clone https://github.com/grafana/mimir.git
+       cd mimir 
+       ``` 
 - Настройте рабочий конфиг `Mimir` 
  - Настройте `Prometheus` на `remote-write` в `Mimir`
  - Пропишите `Data Source Mimir` в `Grafana`
