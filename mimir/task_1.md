@@ -18,11 +18,12 @@ _Пользуемся официальной документацией на Git
      - ```bash
        git clone https://github.com/grafana/mimir.git
        cd mimir 
+       cd docs/sources/mimir/get-started/play-with-grafana-mimir/
        ``` 
 - Настройте рабочий конфиг `Mimir`
 - Настройте конфиг `Nginx`
- - Настройте `Prometheus` на `remote-write` в `Mimir`
- - Пропишите `Data Source Mimir` в `Grafana`
- - Снимите метрики в разделе **Explore** из `Data Source Mimir` в `Grafana`
-   - Достаточно вывести метрику `up`
+- Настройте `Prometheus` на `remote-write` в `Mimir`
+- Пропишите `Data Source Mimir` в `Grafana`
+- Снимите метрики в разделе **Explore** из `Data Source Mimir` в `Grafana`
+- Достаточно вывести метрику `up`
 
