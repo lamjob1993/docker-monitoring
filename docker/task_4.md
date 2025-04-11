@@ -9,7 +9,7 @@
   - **`CPU`**: 6 Cores
   - **`RAM`**: 4Gb
   - **`SSD`**: В дефолте у вас должен быть на 10Gb, [согласно разделу](https://github.com/lamjob1993/linux-monitoring/tree/main/linux_install)
-- Берем в работу бэк мониторинга по [ссылке](https://github.com/lamjob1993/linux-monitoring/tree/main) и поднимаем (не забываем про подключение `volumes`, про сеть):
+- Берем в работу бэк мониторинга и поднимаем (не забываем про подключение `volumes`, про сеть и про проброс портов):
   - **`alertmanager`**
   - **`blackbox-exporter`**
   - **`nginx`**
