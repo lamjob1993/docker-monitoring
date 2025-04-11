@@ -6,8 +6,8 @@
 
 ### Пишем **Docker Compose**
 - Отрезаем на новой **VM**:
-  - **`CPU`**: 6 Cores
-  - **`RAM`**: 4Gb
+  - **`CPU`**: 6/8 Cores
+  - **`RAM`**: 4/6Gb
   - **`SSD`**: В дефолте у вас должен быть на 10Gb, [согласно разделу](https://github.com/lamjob1993/linux-monitoring/tree/main/linux_install)
 - Разворачиваем 10 контейнеров с Node Exporter
 - Разворачиваем Grafana + Prometheus
