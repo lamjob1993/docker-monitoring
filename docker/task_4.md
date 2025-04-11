@@ -6,9 +6,9 @@
 
 ### Шаг 1. Пишем **Docker Compose**
 - Отрезаем на **VM**:
-  - **CPU**: 6 Cores
-  - **RAM**: 4Gb
-  - **SSD**: В дефолте у вас должен быть на 10Gb, [согласно разделу](https://github.com/lamjob1993/linux-monitoring/tree/main/linux_install)
+  - **`CPU`**: 6 Cores
+  - **`RAM`**: 4Gb
+  - **`SSD`**: В дефолте у вас должен быть на 10Gb, [согласно разделу](https://github.com/lamjob1993/linux-monitoring/tree/main/linux_install)
 - Берем в работу бэк мониторинга по [ссылке](https://github.com/lamjob1993/linux-monitoring/tree/main) и поднимаем:
   - **`alertmanager`**
   - **`blackbox-exporter`**
