@@ -4,7 +4,7 @@
 
 ## Task 4
 
-### Шаг 1. Пишем **Docker Compose**
+### Пишем **Docker Compose**
 - Отрезаем на **VM**:
   - **`CPU`**: 6 Cores
   - **`RAM`**: 4Gb
