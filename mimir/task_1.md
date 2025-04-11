@@ -8,7 +8,13 @@ _Пользуемся официальной документацией на Git
    - По данному `Task` разделу нужно написать Docker Compose для отдельной связки мониторинга (можете поднять этот Compose на отдельной виртуалке, чтобы не ломать предыдущую из раздела [Docker](https://github.com/lamjob1993/docker-monitoring/tree/main/docker))
 - Постепенно погружаемся в [схему балансировки](https://grafana.com/docs/mimir/next/get-started/play-with-grafana-mimir/) для горизонтального масштабирования `Prometheus` в разрезе трех инстансов `Mimir` (так называемый хэшринг из кольца `Mimir`, или кольцо хэшринга) завязанных на `Nginx`
  - [Посмотрите этот ролик](https://grafana.com/docs/mimir/latest/get-started/)
- - [Вручную без инструкции напишите Docker Compose](https://grafana.com/docs/mimir/next/get-started/play-with-grafana-mimir/)
+ - [Вручную без инструкции напишите Docker Compose](https://grafana.com/docs/mimir/next/get-started/play-with-grafana-mimir/) для связки мониторинга:
+     - `Grafana`
+     - `Mimir`
+     - `Prometheus`
+     - `Nginx`
+     - `MinIO`
+       - MinIO работает как распределенное хранилище, что обеспечивает высокую доступность, отказоустойчивость и масштабируемость.
    - Если не справляетесь, то по этой же ссылке есть готовые конфиги в GitHub:
      - ```bash
        git clone https://github.com/grafana/mimir.git
