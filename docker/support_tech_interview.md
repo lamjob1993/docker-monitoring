@@ -63,10 +63,9 @@
     - Ответ: Использовать `docker exec -it <id_контейнера> bash` для входа в контейнер, проверки логов, переменных окружения и состояния процессов.
 
 19. **Как правильно писать Dockerfile?**
-    Выучить, что означает каждый параметр построчно.
     - Ответ: 
       ```Dockerfile
-      FROM python:3.9
+      FROM python:3.9 # Выучить, что означает каждый параметр построчно
       WORKDIR /app
       COPY requirements.txt .
       RUN pip install -r requirements.txt
