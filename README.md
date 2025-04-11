@@ -6,7 +6,7 @@
 - Этот репозиторий представляет собой на 75% задачник + необходимую теорию на 25%
 
 ### Последовательность выполнения заданий
-  1. Открываем директорию **`docker`** → `README.md` → `task_1.md` → `task_2.md` → `task_3.md` → `task_4.md`
+  1. Открываем директорию **`docker`** → `README.md` → `task_1.md` → `task_2.md` → `task_3.md` → `task_4.md` → `job_interview.md` → `support_tech_interview.md`
       - **`Что будет:`** `Dockerfile` + `Docker Compose: Monitoring Stack`
 
   2. Открываем директорию **`mimir`** → `README.md` → `task_1.md` → `tech_questions.md`
