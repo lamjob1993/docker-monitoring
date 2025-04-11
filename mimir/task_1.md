@@ -21,7 +21,7 @@ _Пользуемся официальной документацией на Git
        cd mimir 
        cd docs/sources/mimir/get-started/play-with-grafana-mimir/
        ``` 
-- Настройте рабочий конфиг `Mimir`
+- Настройте [рабочий конфиг](https://github.com/grafana/mimir/blob/main/docs/sources/mimir/get-started/play-with-grafana-mimir/config/mimir.yaml) `Mimir`
 - Настройте конфиг `Nginx`
 - Настройте `Prometheus` на `remote-write` в `Mimir`
 - Пропишите `Data Source Mimir` в `Grafana`
