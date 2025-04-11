@@ -25,6 +25,6 @@ _Пользуемся официальной документацией на Git
 - Настройте конфиг `Nginx`
 - Настройте `Prometheus` на `remote-write` в `Mimir`
 - Пропишите `Data Source Mimir` в `Grafana`
-- Снимите метрики в разделе **Explore** из `Data Source Mimir` в `Grafana`
+- Снимите метрики в разделе `Explore` из `Data Source Mimir` в `Grafana`
 - Достаточно вывести метрику `up`
 
