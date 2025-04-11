@@ -13,9 +13,9 @@
 - Разворачиваем Grafana + Prometheus
 - Должна получиться связка мониторинга
 - Открываем официальный дашборд для Node Exporter и пробиваем в глобальных настройках Grafana переменные основных лейблов:
-  - job
-  - ip
-  - port
-  - instance
-- То есть нам нужно, чтобы на дашборде отображались сверху переменные с возможностью выбора ip или instance
+  - **`job`**
+  - **`ip`**
+  - **`port`**
+  - **`instance`**
+- То есть нам нужно, чтобы на дашборде отображались сверху переменные с возможностью выбора `ip` или `instance`
 - [На этом дашборде](https://play.grafana.org/d/T512JVH7z/loki-nginx-service-mesh-json-version?orgId=1&from=now-6h&to=now&timezone=utc&var-datasource=ac4000ca-1959-45f5-aa45-2bd0898f7026&var-label_name=filename&var-label_value=%2Fvar%2Flog%2Fnginx%2Fjson_access.log&var-job=$__all&var-instance=$__all) отражены переменные в верхней части, нужно сделать также и на нашем новом дашборде
