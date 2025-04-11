@@ -1,6 +1,6 @@
 ## Пишем глобальный Docker Compose бэкенда мониторинга
 
-Пишем **Docker Compose** для связки бэкенда мониторинга аналогично [первому разделу](https://github.com/lamjob1993/linux-monitoring/tree/main).
+Пишем **Docker Compose** для связки бэкенда мониторинга аналогично [первому разделу](https://github.com/lamjob1993/linux-monitoring/tree/main). Я понимаю, что пока это тестовый полигон, но пока что мы учимся поэтапно и это нормально.
 
 ## Task 4
 
