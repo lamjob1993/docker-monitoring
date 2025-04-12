@@ -10,5 +10,5 @@
 
       - **`Что будет:`** `Dockerfile` + `Docker Compose: Monitoring Stack` + Вопросы к интервью
 
-  2. Открываем директорию **`mimir`** → `README.md` → `task_1.md` → `tech_questions.md`
+  2. Открываем директорию **`mimir`** → `README.md` → `task_1.md` → `task_2.md` → `tech_questions.md`
       - **`Что будет:`** `Docker Compose:` `Grafana` + `Prometheus` + `x3 Mimir` + `Nginx` + `MinIO` + Вопросы к интервью
