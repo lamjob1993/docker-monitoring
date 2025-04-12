@@ -1,6 +1,6 @@
 # Пишем Dockerfile
 
-Пишем наш первый **Dockerfile** на примере базового мониторинга: **Grafana + Prometheus + Node Exporter**
+Пишем наш первый **Dockerfile** на примере базового мониторинга: **Grafana + Prometheus + Node Exporter**.
 
 ## Task 2
 
