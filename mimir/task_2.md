@@ -14,12 +14,13 @@
   - **`nginx`**
   - **`nginx_exporter`**
   - **`custom_exporter_bash`**
-  - **`grafana`**
+  - **`grafana`**                            # должен быть один инстанс Grafana
   - **`node-exporter`**
   - **`postgresql`**
   - **`postgresql_exporter`**
   - **`process-exporter`**
-  - **`prometheus`**        # должен быть один инстанс Prometheus, в разрезе которого будет поднята обвязка на Mimir
+  - **`prometheus`**                         # должен быть один инстанс Prometheus, в разрезе которого будет поднята обвязка Mimir
+    - **`Nginx`** + **`x3 Mimir`** + **`MinIO`**
   - **`prometheus_federate`**
   - **`pushgateway`**
 - Пропишите Mimir в качестве Data Source в Grafana и снимите метрики со всех экспортеров
