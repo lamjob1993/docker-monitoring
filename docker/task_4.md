@@ -37,4 +37,5 @@
   - Первый вариант лучше, он красивый и хорошо читаемый
   - Схема должна читаться в GitHub, формат должен быть `.svg`, [вот такой ](https://github.com/lamjob1993/linux-monitoring/blob/main/.files/.bucket/%D0%94%D0%B8%D0%B0%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0%20%D0%BC%D0%BE%D0%BD%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3%D0%B0.drawio.svg)
   - Схему выгружаем в формате `.svg` с сайтов: Draw.io или Figma
-  - Исходный код `.svg` открываем в VS Code для проверки и помещаем в GitHub
+  - Исходный код `.svg` открываем в VS Code для проверки и пушим в GitHub
+  - Сохраните текущий `Docker Compose` в качестве бэкапа
