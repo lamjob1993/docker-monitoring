@@ -1,6 +1,6 @@
 # Пишем тестовый Docker Compose
 
-Пишем тестовый **Docker Compose** для обкатки переменных (variables) из связки 10-ти контейнеров c Node Exporter
+Пишем тестовый **Docker Compose** для обкатки переменных (variables) из связки 10-ти контейнеров c Node Exporter.
 
 ## Task 5
 
