@@ -19,7 +19,7 @@
   - **`process-exporter`**
   - **`prometheus`**                         # должен быть один инстанс Prometheus, в разрезе которого будет поднята обвязка Mimir
     - **`Nginx`** + **`x3 Mimir`** + **`MinIO`** + [вспоминаем схему](https://grafana.com/docs/mimir/next/get-started/play-with-grafana-mimir/tutorial-architecture.png)
-  - **`nginx_exporter`**
+    - **`nginx_exporter`**
   - **`prometheus_federate`**
   - **`pushgateway`**
 - Пропишите Mimir в качестве Data Source в Grafana и снимите метрики со всех экспортеров
