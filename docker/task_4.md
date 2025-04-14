@@ -12,8 +12,6 @@
 - Берем в работу бэк мониторинга и поднимаем (не забываем про подключение `volumes`, про сеть и про проброс портов):
   - **`alertmanager`**
   - **`blackbox-exporter`**
-  - **`nginx`**
-  - **`nginx_exporter`**
   - **`custom_exporter_bash`**
   - **`grafana`**
   - **`node-exporter`**
