@@ -10,6 +10,7 @@ _Пользуемся официальной документацией на Git
    - По данному `Task` разделу нужно написать **Docker Compose** для отдельной связки мониторинга (можете поднять этот Compose на отдельной виртуалке, чтобы не ломать предыдущий из раздела [Docker](https://github.com/lamjob1993/docker-monitoring/tree/main/docker))
    - На будущее: можно создавать Compose файлы с разными именами и запускать каждый на одной машине
      - Это особенно полезно, если вы хотите запускать разные конфигурации сервисов или тестировать различные среды (например, `development`, `staging`, `production`) на одном хосте
+     - В целом можете уже начинать тренироваться
 - Постепенно погружаемся в [схему балансировки](https://grafana.com/docs/mimir/next/get-started/play-with-grafana-mimir/) для горизонтального масштабирования `Prometheus` в разрезе трех инстансов `Mimir` (так называемый хэшринг из кольца `Mimir`, или кольцо хэшринга) завязанных на `Nginx`
  - [Посмотрите этот ролик](https://grafana.com/docs/mimir/latest/get-started/)
  - Вручную [без инструкции](https://grafana.com/docs/mimir/next/get-started/play-with-grafana-mimir/) напишите Docker Compose [для связки мониторинга](https://grafana.com/docs/mimir/next/get-started/play-with-grafana-mimir/tutorial-architecture.png):
