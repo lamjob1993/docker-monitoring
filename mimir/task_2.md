@@ -12,7 +12,7 @@
 - Список развернутого мониторинга должен получиться:
   - [Docker: task_4.md](https://github.com/lamjob1993/docker-monitoring/blob/main/docker/task_4.md)
   - **+**
-  - [Mimir: task_1.md](https://github.com/lamjob1993/docker-monitoring/blob/main/mimir/task_1.md
+  - [Mimir: task_1.md](https://github.com/lamjob1993/docker-monitoring/blob/main/mimir/task_1.md]
     - **`Nginx`** + **`x3 Mimir`** + **`MinIO`** + [вспоминаем схему](https://grafana.com/docs/mimir/next/get-started/play-with-grafana-mimir/tutorial-architecture.png)
 - Пропишите Mimir в качестве Data Source в Grafana и снимите метрики со всех экспортеров
 - Сохраните получившийся `Docker Compose` в качестве бэкапа
