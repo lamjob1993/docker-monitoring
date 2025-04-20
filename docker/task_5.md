@@ -1,7 +1,7 @@
 # Пишем Docker Compose для обкатки переменных в Grafana
 
 Пишем новый **Docker Compose** для обкатки переменных (variables) из связки 10-ти контейнеров c Node Exporter.
-- Файлов Docker Compose может быть много, для каждого проекта свой Compose. Писал об этом в [Task_4.md](https://github.com/lamjob1993/docker-monitoring/blob/main/docker/task_4.md).
+- Файлов Docker Compose может быть много, для каждого проекта свой Compose. Писал об этом в [task_4.md](https://github.com/lamjob1993/docker-monitoring/blob/main/docker/task_4.md).
 
 ## Task 5
 
