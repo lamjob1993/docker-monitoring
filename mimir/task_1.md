@@ -21,7 +21,7 @@ _Пользуемся официальной документацией на Git
        - [Балансировщик нагрузки](https://github.com/lamjob1993/linux-monitoring/blob/main/nginx/README.md)
      - **`MinIO`**
        - Это высокопроизводительный, распределенный [объектный хранилищный сервер](https://github.com/minio/minio/blob/master/docs/metrics/prometheus/grafana/README.md) с открытым исходным кодом, совместимый с Amazon S3 API. Он предназначен для хранения и управления большими объемами неструктурированных данных (например, изображений, видео, логов, резервных копий).
-     - Если не справляетесь, то по этой же ссылке есть готовые конфиги в GitHub:
+     - Если не справляетесь, то по [ссылке](https://grafana.com/docs/mimir/next/get-started/play-with-grafana-mimir/) есть готовые конфиги в GitHub:
        - ```bash
          git clone https://github.com/grafana/mimir.git
          cd mimir 
