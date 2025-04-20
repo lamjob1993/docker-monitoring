@@ -13,9 +13,9 @@
   - [Docker: task_4.md](https://github.com/lamjob1993/docker-monitoring/blob/main/docker/task_4.md)
     - **+**
   - [Mimir: task_1.md](https://github.com/lamjob1993/docker-monitoring/blob/main/mimir/task_1.md)
-    - **`Nginx`** + **`x3 Mimir`** + **`MinIO`** + [вспоминаем схему](https://grafana.com/docs/mimir/next/get-started/play-with-grafana-mimir/tutorial-architecture.png)
-  - То есть у вас по сути Task_4 + добавление нового софта со схемы
+    - **`Nginx`** + **`x3 Mimir`** + **`MinIO`**
+  - То есть у вас по сути готовый **task_4** + добавление [нового софта со схемы](https://grafana.com/docs/mimir/next/get-started/play-with-grafana-mimir/tutorial-architecture.png)
   - Не забываем, что `Nginx` должен быть отдельный для `x3 Mimir`
-  - И не забываем, что `Prometheus` тоже должен быть один центральный
+  - И не забываем, что `Prometheus` тоже должен быть один центральный, который будет по `remote-write` писать в кластер `Mimir`
 - Пропишите `Mimir` в качестве `Data Source` в `Grafana` и снимите метрики со всех экспортеров
 - Сохраните получившийся `Docker Compose` в качестве бэкапа
