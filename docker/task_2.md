@@ -2,6 +2,8 @@
 
 Пишем наш первый **Dockerfile** на примере базового мониторинга: **Grafana + Prometheus + Node Exporter**.
 
+`Dockerfile-ов` может быть много, как и `Docker Compose`. Можете придумать для них отдельную директорию и складывать туда. 
+
 ## Task 2
 
 Пишем **Dockerfile**:
@@ -76,3 +78,4 @@ EXPOSE 9090
 
 - Проверяем связку **Grafana + Prometheus + Node Exporter** на веб-мордах
 - Останавливаем все контейнеры
+- Сохраните получившийся `Dockerfile` в качестве бэкапа и запушьте в GitHub
