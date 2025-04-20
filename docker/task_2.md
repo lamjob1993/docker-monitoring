@@ -66,6 +66,13 @@ CMD ["/bin/prometheus", "--config.file=/etc/prometheus/prometheus.yml"]
 EXPOSE 9090
 ```
 
+Команда ADD устрарела (она сразу распаковывает указанный архив в отличие от COPY - могут спросить на собеседовании). Для лучших практик используем:
+```
+COPY prometheus-2.47.0.linux-amd64.tar.gz /tmp/
+RUN tar -xzf /tmp/prometheus-2.47.0.linux-amd64.tar.gz -C /opt/ && \
+    rm /tmp/prometheus-2.47.0.linux-amd64.tar.gz
+```
+
 ### Шаг 2. Сборка образа и запуск
 
 - Собираем образ со своим именем: `docker build -t monitoring-test .`
