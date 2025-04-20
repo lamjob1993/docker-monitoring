@@ -23,11 +23,11 @@ _Пользуемся официальной документацией на Git
        - `MinIO` работает как распределенное хранилище, что обеспечивает высокую доступность, отказоустойчивость и масштабируемость
        - Читаем что такое `MinIO` самостоятельно и учим
      - Если не справляетесь, то по этой же ссылке есть готовые конфиги в GitHub:
-     - ```bash
-       git clone https://github.com/grafana/mimir.git
-       cd mimir 
-       cd docs/sources/mimir/get-started/play-with-grafana-mimir/
-       ``` 
+       - ```bash
+         git clone https://github.com/grafana/mimir.git
+         cd mimir 
+         cd docs/sources/mimir/get-started/play-with-grafana-mimir/
+         ``` 
 - Настройте [рабочий конфиг](https://github.com/grafana/mimir/blob/main/docs/sources/mimir/get-started/play-with-grafana-mimir/config/mimir.yaml) `Mimir`
 - Настройте конфиг `Nginx`
 - Настройте `Prometheus` на `remote-write` в `Mimir`
