@@ -120,4 +120,4 @@ volumes:
   - ```bash
     docker images   # список скачанных образов
     ```
-- Запушьте получившийся `Docker Compose` в GitHub
+- Запушьте получившийся Docker Compose в GitHub
