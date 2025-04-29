@@ -35,4 +35,7 @@
 ### Шаг 4
 - Проверяем веб-морды на всех ПО мониторинга
 - Собираем мониторинг воедино
+    - Prometheus
+    - Grafana
+    - Node Exporter 
 - Далее снимаем метрики с дашборда [Node Exporter Full](https://grafana.com/grafana/dashboards/1860-node-exporter-full/)
