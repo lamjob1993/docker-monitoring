@@ -6,7 +6,7 @@
 
 ### Шаг 1. Пишем **Docker Compose**
 
-#### Рассмотрим готовый Docker Compose в качестве примера
+#### Рассмотрим готовый Docker Compose в качестве примера (Prometheus + Grafana + Node Exporter)
 
 ```yaml
 version: '3.3'  # Версия формата Docker Compose (удаляем строку, так как может возникнуть конфликт версий на разных Docker Compose).
