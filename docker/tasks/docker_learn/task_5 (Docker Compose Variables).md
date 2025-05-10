@@ -24,7 +24,7 @@
 
 
 **Учим следующие разделы для выполнения task_5**
-- [Шпаргалка по переменным](https://github.com/lamjob1993/docker-monitoring/blob/main/docker/%D0%A8%D0%BF%D0%B0%D1%80%D0%B3%D0%B0%D0%BB%D0%BA%D0%B0%20%D0%BF%D0%BE%20%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%BC%20Grafana.md)
-- [Шпаргалка по регуляркам](https://github.com/lamjob1993/docker-monitoring/blob/main/docker/%D0%A8%D0%BF%D0%B0%D1%80%D0%B3%D0%B0%D0%BB%D0%BA%D0%B0%20%D0%BF%D0%BE%20%D1%80%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%BA%D0%B0%D0%BC%20Grafana.md)
-- [Шпаргалка по формулам](https://github.com/lamjob1993/docker-monitoring/blob/main/docker/%D0%A8%D0%BF%D0%B0%D1%80%D0%B3%D0%B0%D0%BB%D0%BA%D0%B0%20%D0%BF%D0%BE%20%D1%84%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0%D0%BC%20Grafana.md)
+- [Шпаргалка по переменным](https://github.com/lamjob1993/docker-monitoring/blob/main/docker/tasks/docker_learn/%D0%A8%D0%BF%D0%B0%D1%80%D0%B3%D0%B0%D0%BB%D0%BA%D0%B0%20%D0%BF%D0%BE%20%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%BC%20Grafana.md)
+- [Шпаргалка по регуляркам](https://github.com/lamjob1993/docker-monitoring/blob/main/docker/tasks/docker_learn/%D0%A8%D0%BF%D0%B0%D1%80%D0%B3%D0%B0%D0%BB%D0%BA%D0%B0%20%D0%BF%D0%BE%20%D1%80%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%BA%D0%B0%D0%BC%20Grafana.md)
+- [Шпаргалка по формулам](https://github.com/lamjob1993/docker-monitoring/blob/main/docker/tasks/docker_learn/%D0%A8%D0%BF%D0%B0%D1%80%D0%B3%D0%B0%D0%BB%D0%BA%D0%B0%20%D0%BF%D0%BE%20%D1%84%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0%D0%BC%20Grafana.md)
 
