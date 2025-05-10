@@ -2,7 +2,7 @@
 
 ## Введение в Docker
 
-- [Что такое Docker](https://github.com/lamjob1993/docker-monitoring/blob/main/docker/DOCKER.md)
+- [Начало](https://github.com/lamjob1993/docker-monitoring/tree/main/docker/beginning)
 - [Практика 1: Запуск контейнеров](https://github.com/lamjob1993/docker-monitoring/blob/main/docker/task_1.md)
 - [Практика 2: Пишем Dockerfile](https://github.com/lamjob1993/docker-monitoring/blob/main/docker/task_2.md)
 - [Практика 3: Пишем Docker Compose](https://github.com/lamjob1993/docker-monitoring/blob/main/docker/task_3.md)
