@@ -6,7 +6,7 @@ _Пользуемся официальной документацией на Git
 
 ## Task 1
 
- - [Вспоминаем нашу схему взаимодействия мониторинга с Mimir](https://github.com/lamjob1993/docker-monitoring/blob/main/mimir/README.md#%D1%81%D1%85%D0%B5%D0%BC%D0%B0-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B-mimir)
+ - [Вспоминаем нашу схему взаимодействия мониторинга с Mimir](https://github.com/lamjob1993/docker-monitoring/blob/main/docker/tasks/mimir/README.md#%D1%81%D1%85%D0%B5%D0%BC%D0%B0-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B-mimir)
    - По данному `Task` разделу нужно написать **Docker Compose** для отдельной связки мониторинга (можете поднять этот Compose на отдельной виртуалке, чтобы не ломать предыдущий из раздела [Docker](https://github.com/lamjob1993/docker-monitoring/tree/main/docker))
    - На будущее: можно создавать Compose файлы с разными именами и запускать каждый на одной машине
      - Это особенно полезно, если вы хотите запускать разные конфигурации сервисов или тестировать различные среды (например, `development`, `staging`, `production`) на одном хосте
