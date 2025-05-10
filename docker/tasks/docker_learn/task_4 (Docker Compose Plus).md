@@ -38,7 +38,7 @@
     - И в самом конце вывести информацию для администраторов отдельным `row`
       - Например взять официальные дашборды для Grafana и Prometheus и вывести на них статистику для админов в `row`
 - Идем в Draw.io или в Figma и рисуем схему вашего получившегося бэка, согласно **Docker Compose** и выкладываем к себе в pet-проект в репозиторий:
-  - Схема должна быть вот [такой](https://miro.com/app/board/uXjVIMhc1ds=/) (лучше сделать в Figma) или [такой](https://github.com/lamjob1993/linux-monitoring/blob/main/tasks/prometheus/beginning/1.%20%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20(%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20Prometheus).md)
+  - Схема должна быть вот [такой](https://miro.com/app/board/uXjVIMhc1ds=/) (лучше сделать в Figma) или [такой](https://github.com/lamjob1993/linux-monitoring/blob/main/tasks/prometheus/beginning/1.%20%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20(%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20Prometheus).md#%D1%81%D1%85%D0%B5%D0%BC%D0%B0-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B-prometheus)
   - Первый вариант лучше, он красивый и хорошо читаемый
   - Схему выгружаем в формате `.svg` с сайтов: Draw.io или Figma
   - Исходный код `.svg` открываем в VS Code для проверки и пушим в GitHub
