@@ -9,7 +9,7 @@
 - Отрезаем на новой **VM**:
   - **`CPU`**: 4 Cores
   - **`RAM`**: 4Gb
-  - **`SSD`**: В дефолте у вас должен быть на 10Gb [согласно разделу](https://github.com/lamjob1993/linux-monitoring/tree/main/linux_install)
+  - **`SSD`**: В дефолте у вас должен быть на 10Gb
 - Разворачиваем 10 контейнеров с Node Exporter
 - Разворачиваем Grafana + Prometheus
 - Должна получиться связка мониторинга
