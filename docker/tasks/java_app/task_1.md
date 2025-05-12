@@ -260,4 +260,5 @@ public class CreditController {
     }
 }
 ```
-Сохраните и закройте файл. Мы добавили два API эндпоинта: `/api/credit/apply` (POST для "подачи заявки") и `/api/credit/info` (GET для получения информации). Spring Boot автоматически преобразует объекты `ApplicationRequest`, `ApplicationStatus` и `Map` в JSON благодаря аннотации `@RestController`.
+- Сохраните и закройте файл. Мы добавили два API эндпоинта: `/api/credit/apply` (POST для "подачи заявки") и `/api/credit/info` (GET для получения информации).
+- Spring Boot автоматически преобразует объекты `ApplicationRequest`, `ApplicationStatus` и `Map` в JSON благодаря аннотации `@RestController`.
