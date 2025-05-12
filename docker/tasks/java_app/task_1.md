@@ -61,7 +61,7 @@ javac -version
 - Настройка OpenJDK 21 (добавьте в конец файла):
 
 ```bash
-export JAVA_HOME="/usr/lib/jvm/java-21-openjdk-amd64" # Укажите точный путь
+export JAVA_HOME="/usr/lib/jvm/java-21-openjdk-amd64/bin/java" # Укажите точный путь
 export PATH=$PATH:$JAVA_HOME/bin
 ```
 
