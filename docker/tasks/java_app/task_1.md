@@ -5,32 +5,32 @@
 
 ### Шаг 0. Изучение структуры проекта 
 ```bash
-credit-pipeline/
-├── .mvn/
-│   └── wrapper/
+.
+├── .mvn
+│   └── wrapper
 │       ├── maven-wrapper.jar
 │       └── maven-wrapper.properties
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/
-│   │   │       └── example/
-│   │   │           └── creditpipeline/
-│   │   │               └── CreditPipelineApplication.java  <-- Главный класс
-│   │   └── resources/
-│   │       ├── application.properties  <-- Файл настроек
-│   │       ├── static/                 <-- Для статических файлов (не используем)
-│   │       └── templates/              <-- Для шаблонов страниц (не используем)
-│   └── test/
-│       └── java/
-│           └── com/
-│               └── example/
-│                   └── creditpipeline/
-│                       └── CreditPipelineApplicationTests.java <-- Файл для тестов
-├── .gitignore         <-- Файл для GitHub
-├── mvnw               <-- Скрипт Maven Wrapper для Linux/macOS
-├── mvnw.cmd           <-- Скрипт Maven Wrapper для Windows
-└── pom.xml            <-- Файл описания проекта Maven
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── com
+│   │   │       └── example
+│   │   │           └── creditpipeline
+│   │   │               └── CreditPipelineApplication.java  # Главный класс
+│   │   └── resources
+│   │       ├── application.properties  # Файл настроек
+│   │       ├── static                  # Для статических файлов
+│   │       └── templates               # Для шаблонов страниц
+│   └── test
+│       └── java
+│           └── com
+│               └── example
+│                   └── creditpipeline
+│                       └── CreditPipelineApplicationTests.java # Файл для тестов
+├── .gitignore         # Указывает Git, что игнорировать
+├── mvnw               # Скрипт Maven Wrapper для Linux/macOS
+├── mvnw.cmd           # Скрипт Maven Wrapper для Windows
+└── pom.xml            # Описание проекта Maven
 ```
 ### Шаг 1. Установка OpenJDK 21
 
