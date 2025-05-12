@@ -36,7 +36,7 @@ credit-pipeline/
 
 ```bash
 sudo apt update
-sudo apt update
+sudo apt install openjdk-21-jdk
 java -version
 javac -version
 ```
