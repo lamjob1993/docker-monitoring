@@ -72,8 +72,8 @@ export PATH=$PATH:$JAVA_HOME/bin
 
 ### Шаг 7. Изучение структуры проекта 
 
-Перейдите в терминале в распакованную папку `credit-pipeline`: `cd ~/projects/credit-pipeline`.
-Посмотрите на структуру файлов командой `tree` (если команда не найдена, установите: `sudo apt install tree`):
+- Перейдите в терминале в распакованную папку `credit-pipeline`: `cd ~/projects/credit-pipeline`.
+- Посмотрите на структуру файлов командой `tree` (если команда не найдена, установите: `sudo apt install tree`):
 
 ```bash
 .
