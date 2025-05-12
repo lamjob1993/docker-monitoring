@@ -67,6 +67,7 @@ export PATH=$PATH:$JAVA_HOME/bin
 
 - Примените изменения, выполнив: `source ~/.bashrc`
 - Проверьте, что переменная установлена: `echo $JAVA_HOME`
+- Результат: `/usr/lib/jvm/java-21-openjdk-amd64/bin/java`
 
 
 
