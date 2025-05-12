@@ -1,8 +1,37 @@
 # Установка Java JDK версии 21
 
 - Почему 21? Потому что на момент 2025гг многие компании используются версии 17-18. 21 - золотая середина.
+- Для работы берем Ubuntu 22.04 под VPN.
 
-
+### Шаг 0. Изучение структуры проекта 
+```bash
+credit-pipeline/
+├── .mvn/
+│   └── wrapper/
+│       ├── maven-wrapper.jar
+│       └── maven-wrapper.properties
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── example/
+│   │   │           └── creditpipeline/
+│   │   │               └── CreditPipelineApplication.java  <-- Главный класс
+│   │   └── resources/
+│   │       ├── application.properties  <-- Файл настроек
+│   │       ├── static/                 <-- Для статических файлов (не используем)
+│   │       └── templates/              <-- Для шаблонов страниц (не используем)
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── creditpipeline/
+│                       └── CreditPipelineApplicationTests.java <-- Файл для тестов
+├── .gitignore         <-- Файл для GitHub
+├── mvnw               <-- Скрипт Maven Wrapper для Linux/macOS
+├── mvnw.cmd           <-- Скрипт Maven Wrapper для Windows
+└── pom.xml            <-- Файл описания проекта Maven
+```
 ### Шаг 1. Установка OpenJDK 21
 
 ```bash
