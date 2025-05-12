@@ -4,9 +4,9 @@
 
 
 ### Шаг 1. Установка OpenJDK 21
-    ```bash
-    sudo apt update
-    sudo apt update
-    java -version
-    javac -version
-    ```
+```bash
+sudo apt update
+sudo apt update
+java -version
+javac -version
+```
