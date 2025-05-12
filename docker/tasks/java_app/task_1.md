@@ -61,14 +61,41 @@ javac -version
 - Настройка OpenJDK 21 (добавьте в конец файла):
 
 ```bash
-export JAVA_HOME="/usr/lib/jvm/java-21-openjdk-amd64/bin/java" # Укажите точный путь
+export JAVA_HOME="/usr/lib/jvm/java-21-openjdk-amd64/" # Укажите точный путь
 export PATH=$PATH:$JAVA_HOME/bin
 ```
 
 - Примените изменения, выполнив: `source ~/.bashrc`
 - Проверьте, что переменная установлена: `echo $JAVA_HOME`
-- Результат: `/usr/lib/jvm/java-21-openjdk-amd64/bin/java`
+- Результат: `/usr/lib/jvm/java-21-openjdk-amd64/`
 
 ### Шаг 5. Установка Maven
-`sudo apt install maven`
+- `sudo apt install maven`
+- `mvn -version`
+
+### Шаг 6. Установка Docker
+- Docker уже должен быть установлен в системе
+
+### Шаг 7. Создание основы проекта (Spring Initializr)
+
+Перейдите в браузер на сайт [https://start.spring.io/](https://start.spring.io/)
+
+Заполните форму следующим образом:
+
+* **Project:** Maven Project
+* **Language:** Java
+* **Spring Boot:** Выберите последнюю стабильную версию (не SNAPSHOT).
+* **Project Metadata:**
+    * **Group:** `com.example` (или `com.yourname`)
+    * **Artifact:** `credit-pipeline`
+    * **Name:** `credit-pipeline`
+    * **Description:** `Simple credit pipeline template`
+    * **Package name:** `com.example.creditpipeline`
+    * **Packaging:** Jar
+    * **Java:** 21 (убедитесь, что выбрана версия 21)
+* **Dependencies:** Нажмите "Add Dependencies..." и добавьте:
+    * **Spring Web:** Для создания веб-API.
+    * **Spring Boot Actuator:** Для метрик и мониторинга.
+
+Нажмите **Generate**. Скачается ZIP-архив. Распакуйте его в удобную для вас папку, например, `~/projects/credit-pipeline`.
 
