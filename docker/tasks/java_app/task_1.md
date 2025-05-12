@@ -16,7 +16,65 @@
 - **Подготовка к GitHub**: Добавим `.gitignore`.
 
 
-### Шаг 2. Изучение структуры проекта 
+### Шаг 2. Установка OpenJDK 21
+
+```bash
+sudo apt update
+sudo apt install openjdk-21-jdk
+java -version
+javac -version
+```
+
+### Шаг 3. Настройка переменной JAVA_HOME (рекомендуется)
+- Хотя многие современные Java-приложения и инструменты (включая Maven и Spring Boot) могут работать без явно установленной JAVA_HOME, иметь ее правильно настроенной — хорошая практика, которая может потребоваться для других инструментов или скриптов.
+- Пакетный менеджер устанавливает JDK в стандартное место (обычно в `/usr/lib/jvm/`). Чтобы узнать точный путь, можно использовать команду `readlink -f $(which java)`. Например, она может показать /usr/lib/jvm/java-21-openjdk-amd64/bin/java. Корневая директория JDK в этом случае будет `/usr/lib/jvm/java-21-openjdk-amd64`.
+- Отредактируйте файл профиля вашего пользователя (например, `~/.bashrc`). Откройте его в текстовом редакторе: `nano ~/.bashrc`
+- Настройка OpenJDK 21 (добавьте в конец файла):
+
+```bash
+export JAVA_HOME="/usr/lib/jvm/java-21-openjdk-amd64/" # Укажите точный путь
+export PATH=$PATH:$JAVA_HOME/bin
+```
+
+- Примените изменения, выполнив: `source ~/.bashrc`
+- Проверьте, что переменная установлена: `echo $JAVA_HOME`
+- Результат: `/usr/lib/jvm/java-21-openjdk-amd64/`
+
+### Шаг 4. Установка Maven
+- `sudo apt install maven`
+- `mvn -version`
+
+### Шаг 5. Установка Docker
+- Docker уже должен быть установлен в системе
+
+### Шаг 6. Создание основы проекта (Spring Initializr)
+
+Перейдите в браузер на сайт [https://start.spring.io/](https://start.spring.io/)
+
+Заполните форму следующим образом:
+
+* **Project:** Maven Project
+* **Language:** Java
+* **Spring Boot:** Выберите последнюю стабильную версию (не SNAPSHOT).
+* **Project Metadata:**
+    * **Group:** `com.example` (или `com.yourname`)
+    * **Artifact:** `credit-pipeline`
+    * **Name:** `credit-pipeline`
+    * **Description:** `Simple credit pipeline template`
+    * **Package name:** `com.example.creditpipeline`
+    * **Packaging:** Jar
+    * **Java:** 21 (убедитесь, что выбрана версия 21)
+* **Dependencies:** Нажмите "Add Dependencies..." и добавьте:
+    * **Spring Web:** Для создания веб-API.
+    * **Spring Boot Actuator:** Для метрик и мониторинга.
+
+Нажмите **Generate**. Скачается ZIP-архив. Распакуйте его в удобную для вас папку, например, `~/projects/credit-pipeline`.
+
+### Шаг 7. Изучение структуры проекта 
+
+Перейдите в терминале в распакованную папку `credit-pipeline`: `cd ~/projects/credit-pipeline`.
+Посмотрите на структуру файлов командой `tree` (если команда не найдена, установите: `sudo apt install tree`):
+
 ```bash
 .
 ├── .mvn
@@ -45,57 +103,3 @@
 ├── mvnw.cmd           # Скрипт Maven Wrapper для Windows
 └── pom.xml            # Описание проекта Maven
 ```
-### Шаг 3. Установка OpenJDK 21
-
-```bash
-sudo apt update
-sudo apt install openjdk-21-jdk
-java -version
-javac -version
-```
-
-### Шаг 4. Настройка переменной JAVA_HOME (рекомендуется)
-- Хотя многие современные Java-приложения и инструменты (включая Maven и Spring Boot) могут работать без явно установленной JAVA_HOME, иметь ее правильно настроенной — хорошая практика, которая может потребоваться для других инструментов или скриптов.
-- Пакетный менеджер устанавливает JDK в стандартное место (обычно в `/usr/lib/jvm/`). Чтобы узнать точный путь, можно использовать команду `readlink -f $(which java)`. Например, она может показать /usr/lib/jvm/java-21-openjdk-amd64/bin/java. Корневая директория JDK в этом случае будет `/usr/lib/jvm/java-21-openjdk-amd64`.
-- Отредактируйте файл профиля вашего пользователя (например, `~/.bashrc`). Откройте его в текстовом редакторе: `nano ~/.bashrc`
-- Настройка OpenJDK 21 (добавьте в конец файла):
-
-```bash
-export JAVA_HOME="/usr/lib/jvm/java-21-openjdk-amd64/" # Укажите точный путь
-export PATH=$PATH:$JAVA_HOME/bin
-```
-
-- Примените изменения, выполнив: `source ~/.bashrc`
-- Проверьте, что переменная установлена: `echo $JAVA_HOME`
-- Результат: `/usr/lib/jvm/java-21-openjdk-amd64/`
-
-### Шаг 5. Установка Maven
-- `sudo apt install maven`
-- `mvn -version`
-
-### Шаг 6. Установка Docker
-- Docker уже должен быть установлен в системе
-
-### Шаг 7. Создание основы проекта (Spring Initializr)
-
-Перейдите в браузер на сайт [https://start.spring.io/](https://start.spring.io/)
-
-Заполните форму следующим образом:
-
-* **Project:** Maven Project
-* **Language:** Java
-* **Spring Boot:** Выберите последнюю стабильную версию (не SNAPSHOT).
-* **Project Metadata:**
-    * **Group:** `com.example` (или `com.yourname`)
-    * **Artifact:** `credit-pipeline`
-    * **Name:** `credit-pipeline`
-    * **Description:** `Simple credit pipeline template`
-    * **Package name:** `com.example.creditpipeline`
-    * **Packaging:** Jar
-    * **Java:** 21 (убедитесь, что выбрана версия 21)
-* **Dependencies:** Нажмите "Add Dependencies..." и добавьте:
-    * **Spring Web:** Для создания веб-API.
-    * **Spring Boot Actuator:** Для метрик и мониторинга.
-
-Нажмите **Generate**. Скачается ZIP-архив. Распакуйте его в удобную для вас папку, например, `~/projects/credit-pipeline`.
-
