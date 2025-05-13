@@ -4,6 +4,8 @@
 - _В нашем случае, Java с помощью специального набора инструментов (фреймворка) под названием Spring Boot поможет нам быстро создать веб-приложение с API._
 - _Для выполнения заданий используем Ubuntu 22.04 под VPN._
 
+---
+
 ### Шаг 1. Пошаговый план
 
 - **Подготовка**: Установим необходимое программное обеспечение.
@@ -16,6 +18,7 @@
 - **Сборка и запуск в Docker**: Запустим приложение в контейнере.
 - **Подготовка к GitHub**: Добавим `.gitignore`.
 
+---
 
 ### Шаг 2. Установка OpenJDK 17
 
@@ -25,6 +28,8 @@ sudo apt install openjdk-17-jdk
 java -version
 javac -version
 ```
+
+---
 
 ### Шаг 3. Настройка переменной JAVA_HOME (рекомендуется)
 - Хотя многие современные Java-приложения и инструменты (включая Maven и Spring Boot) могут работать без явно установленной JAVA_HOME, иметь ее правильно настроенной — хорошая практика, которая может потребоваться для других инструментов или скриптов.
@@ -41,12 +46,18 @@ export PATH=$PATH:$JAVA_HOME/bin
 - Проверьте, что переменная установлена: `echo $JAVA_HOME`
 - Результат: `/usr/lib/jvm/java-17-openjdk-amd64/`
 
+---
+
 ### Шаг 4. Установка Maven
 - `sudo apt install maven`
 - `mvn -version`
 
+---
+
 ### Шаг 5. Установка Docker
 - Docker уже должен быть установлен в системе
+
+---
 
 ### Шаг 6. Создание основы проекта (Spring Initializr)
 
@@ -70,6 +81,8 @@ export PATH=$PATH:$JAVA_HOME/bin
     * **Spring Boot Actuator:** Для метрик и мониторинга.
 
 Нажмите **Generate**. Скачается ZIP-архив. Распакуйте его в удобную для вас папку, например, `~/projects/credit-pipeline`.
+
+---
 
 ### Шаг 7. Изучение структуры проекта 
 
@@ -113,6 +126,8 @@ export PATH=$PATH:$JAVA_HOME/bin
 * `mvnw`, `mvnw.cmd`, `.mvn/`: Maven Wrapper. Позволяет запускать Maven, даже если он не установлен глобально, используя версию, указанную в проекте. На Linux вы будете использовать `./mvnw`.
 * `.gitignore`: Файл для Git, указывающий, какие файлы не нужно включать в репозиторий (например, результаты сборки).
 
+---
+
 ### **Шаг 8: Настройка Actuator**
 
 Откройте файл `src/main/resources/application.properties` в текстовом редакторе (например, `nano src/main/resources/application.properties`):
@@ -134,6 +149,8 @@ management.endpoints.web.exposure.include=*
 * `management.endpoints.web.exposure.include=*`: Разрешает доступ ко всем эндпоинтам Actuator (health, info, metrics и т.д.) через веб.
 
 Сохраните и закройте файл.
+
+---
 
 ### **Шаг 9: Создание простого JSON API**
 
@@ -263,6 +280,8 @@ public class CreditController {
 ```
 - Сохраните и закройте файл. Мы добавили два API эндпоинта: `/api/credit/apply` (POST для "подачи заявки") и `/api/credit/info` (GET для получения информации).
 - Spring Boot автоматически преобразует объекты `ApplicationRequest`, `ApplicationStatus` и `Map` в JSON благодаря аннотации `@RestController`.
+
+---
 
 ---
 
