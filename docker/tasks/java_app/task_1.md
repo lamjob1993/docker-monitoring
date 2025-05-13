@@ -113,7 +113,7 @@ export PATH=$PATH:$JAVA_HOME/bin
 * `mvnw`, `mvnw.cmd`, `.mvn/`: Maven Wrapper. Позволяет запускать Maven, даже если он не установлен глобально, используя версию, указанную в проекте. На Linux вы будете использовать `./mvnw`.
 * `.gitignore`: Файл для Git, указывающий, какие файлы не нужно включать в репозиторий (например, результаты сборки).
 
-**Шаг 8: Настройка Actuator**
+### **Шаг 8: Настройка Actuator**
 
 Откройте файл `src/main/resources/application.properties` в текстовом редакторе (например, `nano src/main/resources/application.properties`):
 
@@ -135,7 +135,7 @@ management.endpoints.web.exposure.include=*
 
 Сохраните и закройте файл.
 
-**Шаг 9: Создание простого JSON API**
+### **Шаг 9: Создание простого JSON API**
 
 Создадим Java-класс, который будет обрабатывать веб-запросы и возвращать JSON. Это будет "контроллер".
 
@@ -266,7 +266,7 @@ public class CreditController {
 
 ---
 
-**Шаг 10: Запуск приложения локально (на Linux)**
+### **Шаг 10: Запуск приложения локально (на Linux)**
 
 Теперь запустим наше приложение на вашей Ubuntu машине, чтобы проверить его работу. Используем Maven Wrapper (`./mvnw`).
 
@@ -280,7 +280,7 @@ cd ~/projects/credit-pipeline
 ```
 Maven Wrapper скачает нужную версию Maven (если еще не скачал), скачает все зависимости проекта (библиотеки из `pom.xml` - это займет время при первом запуске), скомпилирует код и запустит Spring Boot приложение. Вы увидите много сообщений в терминале. В конце должно быть сообщение о старте приложения на порту 8080.
 
-```
+```bash
 ...
 c.e.c.CreditPipelineApplication    : Started CreditPipelineApplication in X.XXX seconds (process running for Y.YYY)
 ```
