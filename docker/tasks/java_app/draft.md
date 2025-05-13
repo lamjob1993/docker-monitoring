@@ -1,57 +1,5 @@
 
 
-
----
-
-**Шаг 6: Запуск приложения локально (на Linux)**
-
-Теперь запустим наше приложение на вашей Ubuntu машине, чтобы проверить его работу. Используем Maven Wrapper (`./mvnw`).
-
-Откройте терминал и перейдите в корневую папку проекта `credit-pipeline`:
-```bash
-cd ~/projects/credit-pipeline
-```
-Запустите приложение:
-```bash
-./mvnw spring-boot:run
-```
-Maven Wrapper скачает нужную версию Maven (если еще не скачал), скачает все зависимости проекта (библиотеки из `pom.xml` - это займет время при первом запуске), скомпилирует код и запустит Spring Boot приложение. Вы увидите много сообщений в терминале. В конце должно быть сообщение о старте приложения на порту 8080.
-
-```
-...
-c.e.c.CreditPipelineApplication    : Started CreditPipelineApplication in X.XXX seconds (process running for Y.YYY)
-```
-
-Приложение работает! Теперь протестируем его.
-
-* **Actuator метрики:** Откройте браузер или используйте `curl`.
-    * В браузере: `http://localhost:8080/actuator` (увидите список эндпоинтов)
-    * В браузере: `http://localhost:8080/actuator/health` (статус здоровья)
-    * В браузере: `http://localhost:8080/actuator/info` (сейчас пустой)
-    * В браузере: `http://localhost:8080/actuator/metrics` (список метрик)
-    * В терминале с `curl`:
-        ```bash
-        curl http://localhost:8080/actuator/health
-        # Ожидаемый вывод: {"status":"UP"}
-        ```
-
-* **Наше API:**
-    * В браузере: `http://localhost:8080/api/credit/info`
-        ```json
-        {"pipelineName":"SimpleCreditPipelineTemplate","version":"1.0.0","description":"Тестовый шаблон кредитного конвейера с Actuator и JSON API"}
-        ```
-    * В терминале с `curl` для POST запроса на `/api/credit/apply`:
-        ```bash
-        curl -X POST http://localhost:8080/api/credit/apply \
-        -H "Content-Type: application/json" \
-        -d '{"clientId": "client_xyz", "loanAmount": 75000}'
-        ```
-        Вы должны получить JSON ответ со статусом `PROCESSING` или `REJECTED` и сгенерированным `applicationId`. Посмотрите на логи в терминале, где запущено приложение - там будут напечатаны сообщения из `System.out.println`.
-
-Чтобы остановить приложение, вернитесь в терминал, где оно запущено, и нажмите `Ctrl+C`.
-
----
-
 **Шаг 7: Сборка приложения для запуска (JAR-файл)**
 
 Для того чтобы упаковать наше приложение для запуска вне среды разработки (например, в Docker), мы соберем исполняемый JAR-файл. Spring Boot делает это удобным.
