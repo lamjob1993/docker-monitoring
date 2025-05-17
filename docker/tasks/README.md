@@ -10,4 +10,5 @@
 2. [mimir](https://github.com/lamjob1993/docker-monitoring/tree/main/docker/tasks/mimir)
     - `tasks (1..)`
     - `tech_questions.md`
-3. ...
+3. [observability](https://github.com/lamjob1993/docker-monitoring/tree/main/docker/tasks/observability)
+4. ...
