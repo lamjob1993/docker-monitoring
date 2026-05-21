@@ -13,4 +13,4 @@
   - [Beginner](https://github.com/collabnix/dockerlabs/blob/master/workshop/docker/README.md)
   - [Intermediate](https://github.com/collabnix/dockerlabs/blob/master/intermediate/workshop/README.md)
   - [Advanced](https://github.com/collabnix/dockerlabs/blob/master/advanced/workshop/README.md)
-- [Linux Online](https://www.onworks.net/onworkssession.php)
+- [Запустить Linux Online](https://www.onworks.net/onworkssession.php)
