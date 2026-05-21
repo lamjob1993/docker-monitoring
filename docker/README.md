@@ -9,7 +9,7 @@
 ---
 
 **Дополнительные темы / лабы для изучения**
-- https://github.com/collabnix/dockerlabs
+- [Docker Labs](https://github.com/collabnix/dockerlabs)
   - [Beginner](https://github.com/collabnix/dockerlabs/blob/master/workshop/docker/README.md)
   - [Intermediate](https://github.com/collabnix/dockerlabs/blob/master/intermediate/workshop/README.md)
   - [Advanced](https://github.com/collabnix/dockerlabs/blob/master/advanced/workshop/README.md)
